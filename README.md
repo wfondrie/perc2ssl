@@ -20,3 +20,25 @@ pip install git+https://github.com/wfondrie/perc2ssl.git
 perc2ssl is easy to use. Once installed, the documentation can be displayed by
 running `perc2ssl` with no arguments, or by using the `-h` and `--help`
 arguments.
+
+```
+usage: perc2ssl [-h] [--data_dir DATA_DIR] target_file
+
+Convert crux percolator results to .ssl format for BiblioSpec. Given the log
+and tab-delimited files from a crux percolator run, this program will
+aggregate the necessary information into an .ssl file. This can be used for
+input into BiblioSpec for generating spectral libraries. An .ssl file with the
+same file root as the input files will be created.
+
+positional arguments:
+  target_file           A tab-delimited result file from crux percolator.
+                        These end with
+                        'percolator.target.[psms|peptides].txt'. The root of
+                        this file will be used to find the corresponding log
+                        file within the same directory.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --data_dir DATA_DIR, -d DATA_DIR
+                        Path to the MS data files.
+```

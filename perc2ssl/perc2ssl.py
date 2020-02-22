@@ -33,7 +33,8 @@ def main():
 
     parser.add_argument("--data_dir", "-d",
                         default=(".."),
-                        help=("Path to the MS data files."))
+                        help=("Path to the MS data files."
+                              "The default is '..'."))
 
     # print help if no arguments
     if len(sys.argv) == 1:

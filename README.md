@@ -40,5 +40,5 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
   --data_dir DATA_DIR, -d DATA_DIR
-                        Path to the MS data files.
+                        Path to the MS data files. The default is '..'.
 ```
